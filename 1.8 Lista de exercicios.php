@@ -2,7 +2,7 @@
 
 // 1. Escreva uma função em PHP que receba dois números inteiros e uma string representando a operação matemática e retorne o resultado da operação.
 
-/* $n1 = 10;
+$n1 = 10;
 $n2 = 5;
 $operacao = "-";
 
@@ -23,7 +23,7 @@ function teste ($n1,$n2,$operacao){
     
 }
 
-echo teste($n1,$n2,$operacao)."\n";*/
+echo teste($n1,$n2,$operacao)."\n";
 
 // 2. Crie uma função em PHP que calcule o IMC baseado na altura e peso passados por parâmetro.
 
@@ -54,6 +54,28 @@ echo calculaImc ($peso, $altura)."\n";
 
 // 3. Crie uma função em PHP que converta graus celsius para Fahrenheit.
 
+function temperatura (){
+
+    $celsius = 10;
+    $fahrenheit = ($celsius * 1.8 ) + 32;
+    return " A temperatura de $celsius graus celsius representa $fahrenheit - fahrenheit \n";
+
+}
+
+echo temperatura();
+
+echo "-----------------------------------------------------------------------------------------\n";
+
+$celsius = 20;
+
+function temperatura1 ($celsius){
+
+    $fahrenheit = ($celsius * 1.8 ) + 32;
+    return " A temperatura de $celsius graus celsius representa $fahrenheit - fahrenheit \n";
+
+}
+
+echo temperatura1($celsius);
 
 // Desafio extra - chatGPT
 
