@@ -1,7 +1,7 @@
 <?php
 
 // Aula 2.9
-require __DIR__ . "/funcoes.php";
+require __DIR__ . "/src/funcoes.php";
 // __DIR__ -> caminho absoluto
 
 echo "Bem-vindo(a) ao screen match!\n";
@@ -54,6 +54,17 @@ $posicao = strpos ($filme['nome'], "Rag");
 echo $posicao."\n";
 
 echo substr(( $filme['nome']), 8);
+
+//Aula 4.2
+// $teste = criarFilme ( 
+//     nome: "Michael",
+//     nota: 8.8,
+//     ano: 2035,
+//     genero: "comedia" 
+// );
+
+$teste = criarFilme ( "Michael", 2035, 8.8, "comedia" );
+print_r($teste);
 
 ?>
 
